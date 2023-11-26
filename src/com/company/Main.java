@@ -37,7 +37,8 @@ public class Main {
 
     public static void game(Scanner scanner) {
         boolean inGame = true;
-        System.out.println("Введите размерность матрицы");
+        System.out.println("Введите размерность матрицы (введите количество строк и нажмите 'Enter'" +
+                "введите количество столбцов и нажмите 'Enter')");
 
         Game game = initGame(scanner);
 
@@ -70,7 +71,7 @@ public class Main {
 
         Game game = new Game(rows, columns);
 
-        System.out.println("Укажите живые клетки (Строка и Столбец)" +
+        System.out.println("Укажите живые клетки (Строка и нажмите 'Enter'. Столбец и нажмите 'Enter' )" +
                 "для окончания ввода введите 'end' ");
         while (count < (rows * columns)) {
 
