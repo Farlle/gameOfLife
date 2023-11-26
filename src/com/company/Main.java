@@ -14,7 +14,7 @@ public class Main {
     public static void menu() {
         System.out.println("Для старта игра необходимо ввести размер матрицы и старотовые позиции живых клеток \n" +
                 "Игра закончится, если не останется живых клеток или после цикла не будет никаких изменений");
-        int x = 0;
+        int menu = 0;
         Scanner scanner = new Scanner(System.in);
         String s = "";
         while (!"9".equals(s)) {
@@ -22,11 +22,11 @@ public class Main {
             System.out.println("Для выхода нажмите 9");
             s = scanner.next();
             try {
-                x = Integer.parseInt(s);
+                menu = Integer.parseInt(s);
             } catch (NumberFormatException e) {
                 System.out.println("Неверный ввод");
             }
-            switch (x) {
+            switch (menu) {
                 case START_GAME -> game(scanner);
                 case EXIT_GAME -> s = "9";
             }
