@@ -6,7 +6,7 @@ public class Game {
 
     private int columns;
     private int rows;
-    private String[][] matrixGame;//= new String[rows][columns];
+    private String[][] matrixGame;
     private String[][] oldMatrixGame;
 
     public Game(int rows, int columns) {
@@ -106,14 +106,6 @@ public class Game {
     }
 
     public boolean checkchecUniqueness(String[][] newMatrix){
-       // boolean uniqueness = true;
-//        System.out.println(matrixToString(oldMatrixGame));
-//      //  if (newMatrix.equals(oldMatrixGame)){
-//        if()){
-//            return false;
-//        }else {
-//            return true;
-//        }
         return !Arrays.deepEquals(newMatrix,oldMatrixGame);
     }
 
